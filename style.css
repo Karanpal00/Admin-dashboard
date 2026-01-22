@@ -10,11 +10,11 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     background: linear-gradient(
-  135deg,
-  #7b0f14 0%,
-  #2b0a0c 50%,
-  #a11a1f 100%
-);
+                        135deg,
+                        #7b0f14 0%,
+                        #2b0a0c 50%,
+                        #a11a1f 100%
+                        );
 }
 
 /* ----------header----------- */ 
@@ -138,6 +138,7 @@ svg {
     grid-template-rows: 1fr 1fr;
     color: #f2e8e8;
     overflow: auto;
+    margin-left: 2rem;
 }
 
 .main-content::-webkit-scrollbar {
@@ -209,6 +210,7 @@ a {
     width:4rem;
     margin: 1rem 1rem 0 1rem;
 }
+
 .announcement {
     margin-top: 4rem;
     position: relative;
@@ -256,6 +258,59 @@ a {
     font-size: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 2rem;
+}
+
+.announcement-content div:last-child p {
+    padding-bottom: 0;
+}
+
+.skills {
+    margin-top: 4rem;
+    position: relative;
+    top: 2rem;
+    color: #f2e8e8;
+}
+
+.skills>h1 {
+    font-size: 3rem;
+    position: relative;
+    left: 4.5rem;
+}
+
+.skills-content {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 3rem;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 8px 4px #b87277;
+
+    box-sizing: border-box;
+    width: 36rem;
+    padding: 3.5rem;
+
+    position: relative;
+    left: 4.5rem;
+    top: 2rem;
+
+}
+
+.skills-content div {
+    display: flex;
+    gap: 3rem;
+
+}
+.skills-content div svg {
+    fill: #c9b2b2;
+    width: 4rem;
+}
+
+.skills-content p {
+    font-size: 1.5rem;
+}
+
+.skills-content p::first-line {
+    font-size: 2rem;
 }
 
 /* ----------sidebar----------- */ 
